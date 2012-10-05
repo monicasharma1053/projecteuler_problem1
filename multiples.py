@@ -43,7 +43,12 @@ class Multiples:
             product=self.multiplier*multiplicand
             b.append(product)
             multiplicand=multiplicand+1
-        return b 
+        return b
+
+
+
+
+    
             
             
             
