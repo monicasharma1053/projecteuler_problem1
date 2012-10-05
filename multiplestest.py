@@ -11,9 +11,19 @@ class MultiplesTest(unittest.TestCase):
         self.m=Multiples()
 
 
-    def testOneFourMultiplesRange(self):
-        self.assertEqual([1,2,3,4], self.m.MultiplesInARange(1,4)) 
+    def testOneMultiplier(self):
+        self.m.IsDefinedMultiplier(5)
+        self.assertEqual(5, self.m.multiplier)
 
+    def testOneValidNumberofMultiples(self):
+        self.m.ValidNumberOfMultiples(2)
+        self.assertEqual(2, self.m.numberOfMultiples)
+
+
+    def testRangeOfMultiples(self):
+        self.m.multiplier=5
+        self.m.numberOfMultiples=2
+        self.assertEqual([5,10], self.m.MultiplesRange()) 
 
 
 
