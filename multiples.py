@@ -33,6 +33,24 @@ class Multiples:
             a.append(self.multiplier*multiplicand)
             multiplicand=multiplicand+1
         return a
+
+
+    def MultiplesUnderAMax(self, maxnum):
+        multiplicand=1
+        product=0
+        b=[]
+        while(product<maxnum):
+            product=self.multiplier*multiplicand
+            b.append(product)
+            multiplicand=multiplicand+1
+        return b 
+            
+            
+            
+            
+        
+
+
             
 
 

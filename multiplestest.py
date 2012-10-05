@@ -26,6 +26,13 @@ class MultiplesTest(unittest.TestCase):
         self.assertEqual([5,10], self.m.MultiplesRange())
 
 
+    def testMultiplesUnderAMax(self):
+        self.assertEqual([5,10],self.m.MultiplesUnderAMax(10)) 
+        
+        
+        
+
+
         
 
 
